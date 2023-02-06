@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arvin Nisay Portfolio</title>
+<script src="https://kit.fontawesome.com/2cbeb277dd.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<link rel="stylesheet" href="Index.css">
+		<!-- Boxicons CSS -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+	
+<div id="aside">
+		<img src="img1.jpg" alt="arvin">
+</div>
+<div id="content">
+	<h2>Arvin Nisay</h2>
+	<p>I'm a Front End Web Developer based in Perth, Australia. I enjoy creating one of a kind of Websites. Working into the Tech Industry is my dream.
+</p>
+	<section class="home-section">
+	<div class="home-content">
+	<a class="bxmenu"><button>Find out More</button></a>
+	</div>
+	</section>
+	<div class="sidebar">
+		<div class="logo-details">
+			<i class="bx bxl-c-plus-plus"></i>
+			<span class="logo_name"></span>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="#">
+				 <i class="bx bxs-grid-alt"></i>
+				<span class="link_name">Home</span>
+				</a>
+			</li>
+			<li>
+			<div class="iocn-link">
+				<a href="#">
+				 <i class="bx bx-collection"></i>
+				<span class="link_name">Services</span>
+				</a>
+				<i class="bx bxs-chevron-down arrow" ></i>
+				</div>
+				<ul class="sub-menu">
+					<li><a class="link_name" href="#">Category</a></li>
+					<li><a href="#">HTML & CSS</a></li>
+					<li><a href="#">JavaSCript</a></li>
+					<li><a href="#">PHP & MySQL</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+				 <i class="bx bxs-grid-alt"></i>
+				<span class="link_name">About</span>
+				</a>
+			</li>
+			<li>
+			<div class="iocn-link">
+				<a href="#">
+				 <i class="bx bxs-book-alt"></i>
+				<span class="link_name">Portfolio</span>
+				</a>
+				<i class="bx bxs-chevron-down arrow" ></i>
+				</div>
+				<ul class="sub-menu">
+					<li><a class="link_name" href="#">Posts</a></li>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">Login Form</a></li>
+					<li><a href="#">Card Design</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+				 <i class="bx bxs-grid-alt"></i>
+				<span class="link_name">Contact</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+	</div>
+<!-----About----->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="img2.jpg">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+					It has survived not only five centuries,<br>
+					but also the leap into electronic typesetting.</p>
+					
+					<div class="tab-title">
+						<p class="tab-links">Skills</p>
+						<p class="tab-links">Experience</p>
+						<p class="tab-links">Education</p>
+					</div>
+					<div class="tab-contents">
+						<ul>
+							<li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+							<li><span>Web Development</span><br>Web app Development</li>
+							<li><span>App Development</span><br>Building Android/Ios apps</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+	<script>
+	
+	let arrow = document.querySelectorAll(".arrow");
+	for (var i = 0; i < arrow.length; i++) {
+	arrow[i].addEventListener("click", (e)=>{		
+	let arrowParent = e.target.parentElement.parentElement;
+	arrowParent.classList.toggle("showList");
+		});
+	}
+		
+	let sidebar = document.querySelector(".sidebar");
+	let sidebarBtn = document.querySelector(".bxmenu");
+		console.log(sidebarBtn);
+		
+	sidebarBtn.addEventListener("click",()=>{
+		sidebar.classList.toggle("open");
+	
+	})
+	
+	</script>
+</body>
+</html>
